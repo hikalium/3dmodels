@@ -4,8 +4,8 @@ BLENDER_PATH=bin/blender-4.0.1-linux-x64/blender
 ${BLENDER_PATH} :
 	mkdir -p bin
 	echo ${BLENDER_URL}
-	#cd bin && \
-	#	wget ${BLENDER_URL}
+	cd bin && \
+		wget ${BLENDER_URL}
 
 run : ${BLENDER_PATH}
 	${BLENDER_PATH}
